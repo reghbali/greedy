@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "setuptools_scm[toml]>=3.4",
+    "scikit-build>=0.17.3",
+    "cmake>=3.23",
+    "ninja"
+    ]
+
+[tool.setuptools_scm]
+write_to = "_dist_ver.py"
+write_to_template = "__version__ = '{version}'\n"
